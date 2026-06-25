@@ -1,0 +1,15 @@
+SAP Translation Hub
+SAP Translation Hub lets you translate your UI texts or documents by using a repository of SAP-approved translations and terminology as well as machine translation. You can access the translation resources by consuming a range of API methods or by using integrated workflow scenarios on a UI. Furthermore, developers can get suggestions for their source texts during the development phase, which improves accuracy and saves time.Translate UI texts and documents and get UI text suggestions during development.
+Service Plan: Free  (We offer Document Translation service as a free tier service plan.
+Only community support is available for free tier service plans and these are not subject to SLAs.  
+)
+                    No Features
+                    
+Commercial Model: PPAYG,Cloud Credits,btpea (Billable)
+for the following regions: CLOUD FOUNDRY, AWS, Europe (Frankfurt);CLOUD FOUNDRY, AWS, US East (VA).
+Prices:
+Metric|Billing Block Size|Unit Price per Month
+------|------------------|--------------------
+Translated Characters|1|0.00
+Note:
+Total number of characters returned as translated text, including whitespace characters. Multiple-byte characters are counted as a single character.

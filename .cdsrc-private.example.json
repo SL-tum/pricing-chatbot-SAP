@@ -1,0 +1,24 @@
+{
+  "requires": {
+    "auth": {
+      "kind": "xsuaa",
+      "credentials": {
+        "xsappname": "<xsappname>",
+        "clientid": "<clientid>",
+        "clientsecret": "<clientsecret>",
+        "url": "<xsuaa-url>",
+        "tenantid": "<tenantid>"
+      }
+    },
+    "db": {
+      "kind": "hana-cloud",
+      "credentials": {
+        "host": "<hana-host>",
+        "port": 443,
+        "user": "<hana-user>",
+        "password": "<hana-password>",
+        "schema": "<schema>"
+      }
+    }
+  }
+}

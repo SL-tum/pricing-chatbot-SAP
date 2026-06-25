@@ -1,0 +1,12 @@
+SAP Task Center
+The SAP Task Center service enables integration with SAP and non-SAP applications to provide a single entry point for end users to access all their assigned tasks. The tasks can be accessed by end users through the SAP Task Center Web app, SAP Mobile Start app, and SAP Start.SAP Task Center helps you integrate tasks into a central solution.
+Service Plan: Standard (SAP Task Center free standard plan enables the integration of SAP Task Center with the supported SAP cloud solutions.)
+                    
+Technical Features:
+Feature|Quantity|Description|MoreInfo(link)
+-------|--------|-----------|--------------
+Tasks stored in the SAP Task Center task cache||The free standard plan, available for production usage. It enables the integration of SAP Task Center with the supported SAP cloud solutions.|()
+                    
+Commercial Model: Cloud Credits,btpea,PPAYG (Non-Billable)
+for the following regions: CLOUD FOUNDRY, AWS, Canada (Montreal);CLOUD FOUNDRY, AWS, Europe (Frankfurt);CLOUD FOUNDRY, AWS, Australia (Sydney);CLOUD FOUNDRY, AWS, US East (VA);CLOUD FOUNDRY, AWS, Brazil (São Paulo);CLOUD FOUNDRY, AWS, Japan (Tokyo);CLOUD FOUNDRY, Microsoft Azure, US West (WA);CLOUD FOUNDRY, Microsoft Azure, US East (VA);CLOUD FOUNDRY, Microsoft Azure, Japan (Tokyo);CLOUD FOUNDRY, Microsoft Azure, Australia (Sydney);CLOUD FOUNDRY, Google Cloud, US Central (IA);CLOUD FOUNDRY, Microsoft Azure, Europe (Netherlands);CLOUD FOUNDRY, Google Cloud, Europe (Frankfurt);CLOUD FOUNDRY, Google Cloud, India (Mumbai);CLOUD FOUNDRY, AWS, South Korea (Seoul);CLOUD FOUNDRY, Google Cloud, KSA (Dammam – KSA Regulated Customers);CLOUD FOUNDRY, Google Cloud, Israel (Tel Aviv);CLOUD FOUNDRY, Microsoft Azure, Switzerland (EU Access);CLOUD FOUNDRY, AWS, Europe (Frankfurt) EU Access;CLOUD FOUNDRY, AWS, Singapore;CLOUD FOUNDRY, Google Cloud, Australia Southeast (Sydney);CLOUD FOUNDRY, Microsoft Azure, Brazil South;CLOUD FOUNDRY, Microsoft Azure, Singapore.
+Unknown Price, Please check again; Or the service under this service plan is free.

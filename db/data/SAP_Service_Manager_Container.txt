@@ -1,0 +1,12 @@
+SAP Service Manager
+SAP Service Manager service enables you to consume SAP BTP services from any connected runtime environment, track and manage the creation of service instances, and share services and service instances between different environments.The central registry for service brokers and environments in SAP BTP
+Service Plan: Container (Allows bindings corresponding to the service instance. Instances created are visible from the instance itself and from instances of the subaccount-* plans, but not from other container instances.)
+                    No Features
+                    
+Commercial Model: Free (Non-Billable)
+for the following regions: CLOUD FOUNDRY, AWS, US East (VA);CLOUD FOUNDRY, Microsoft Azure, Singapore.
+Unknown Price, Please check again; Or the service under this service plan is free.
+
+Commercial Model: Subscription,PPAYG,Cloud Credits,btpea (Non-Billable)
+for the following regions: CLOUD FOUNDRY, AWS, Australia (Sydney);CLOUD FOUNDRY, AWS, US East (VA);CLOUD FOUNDRY, Microsoft Azure, Europe (Netherlands);CLOUD FOUNDRY, Microsoft Azure, US East (VA);CLOUD FOUNDRY, Google Cloud, US Central (IA);CLOUD FOUNDRY, AWS, Canada (Montreal);CLOUD FOUNDRY, Microsoft Azure, US West (WA);CLOUD FOUNDRY, Microsoft Azure, Singapore;CLOUD FOUNDRY, AWS, Japan (Tokyo);CLOUD FOUNDRY, AWS, Europe (Frankfurt) EU Access;CLOUD FOUNDRY, Microsoft Azure, Japan (Tokyo);CLOUD FOUNDRY, AWS, Singapore;CLOUD FOUNDRY, AWS, Europe (Frankfurt);CLOUD FOUNDRY, Microsoft Azure, Australia (Sydney);CLOUD FOUNDRY, AWS, Brazil (São Paulo);CLOUD FOUNDRY, Google Cloud, India (Mumbai);CLOUD FOUNDRY, Google Cloud, Europe (Frankfurt);CLOUD FOUNDRY, Microsoft Azure, Switzerland (EU Access);CLOUD FOUNDRY, Google Cloud, KSA (Dammam – KSA Regulated Customers);CLOUD FOUNDRY, Google Cloud, Australia Southeast (Sydney);CLOUD FOUNDRY, Google Cloud, Israel (Tel Aviv);CLOUD FOUNDRY, Microsoft Azure, Brazil South;CLOUD FOUNDRY, AWS, South Korea (Seoul).
+Unknown Price, Please check again; Or the service under this service plan is free.

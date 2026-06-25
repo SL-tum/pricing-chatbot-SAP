@@ -1,0 +1,77 @@
+.chatPage {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chatHistory {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+
+.chatList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.customListItem {
+  background-color: transparent;
+}
+
+.chatMessageBox {
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.userMessageBox,
+.botMessageBox {
+  max-width: 70%;
+  padding: 0.8rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.userMessageBox {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  align-self: flex-end;
+}
+
+.botMessageBox {
+  background-color: #e9ecef;
+  color: #495057;
+  align-self: flex-start;
+}
+
+.chatMessageText {
+  font-size: 1rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.chatInputContainer {
+  display: flex; /* Ensures Flexbox layout */
+  justify-content: center; /* Horizontally centers the items */
+  align-items: center; /* Vertically centers the items */
+  gap: 0.5rem; /* Adds space between the input and button */
+  padding: 1rem; /* Optional: Adds spacing inside the container */
+  background-color: white;
+  border-top: 1px solid #ddd;
+}

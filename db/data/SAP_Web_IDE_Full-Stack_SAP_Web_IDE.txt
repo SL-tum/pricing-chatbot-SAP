@@ -1,0 +1,13 @@
+SAP Web IDE Full-Stack
+With SAP Web IDE Full-Stack, you can easily develop, test, build, deploy, and extend role-based, consumer-grade apps for business users. Create applications rapidly and deliver an outstanding user experience. You can extend or build SAP Fiori apps, create SaaS solutions, extend SAP S/4HANA cloud services, develop hybrid mobile apps, and build IoT apps for SAP Leonardo, using the UI development toolkit for HTML5, the SAP HANA toolset, and Java programming language and technologies.Create and extend SAP full-stack applications for browsers and mobile devices.
+Service Plan: SAP Web IDE (-)
+                    No Features
+                    
+Commercial Model: Cloud Credits (Billable)
+for the following regions: SAP, SAP, US East (Ashburn, Neo);SAP, SAP, US East (Sterling, Neo);SAP, SAP, Brazil (São Paulo, Neo);SAP, SAP, Europe (Rot, Neo);SAP, SAP, UAE (Dubai);SAP, SAP, Australia (Sydney, Neo);SAP, SAP, Europe (Amsterdam, Neo);SAP, SAP, Japan (Tokyo, Neo);SAP, SAP, Canada (Toronto, Neo);SAP, SAP, Europe (Frankfurt, Neo);SAP, SAP, KSA (Riyadh);SAP, SAP, US West (Chandler, Neo);SAP, SAP, US West (Colorado Springs, Neo);SAP, SAP, China (Shanghai, Neo).
+Prices:
+Metric|Billing Block Size|Unit Price per Month
+------|------------------|--------------------
+Users|5|49.00
+Note:
+Individuals authorized to access the cloud service. For purposes of Platform cloud services, users include individuals authorized to access a Platform application.

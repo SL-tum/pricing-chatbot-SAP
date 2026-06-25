@@ -1,0 +1,12 @@
+SAP Software-as-a-Service Provisioning service
+Manage your subscriptions to multitenant applications and their dependent services. Operations include getting registration details, subscribing to an application, unsubscribing applications, retrieving all your application subscriptions, and updating subscription dependencies.Register and provision subscriptions for multitenant applications and services.
+Service Plan: Application ()
+                    No Features
+                    
+Commercial Model: Free (Non-Billable)
+for the following regions: CLOUD FOUNDRY, Microsoft Azure, Singapore;CLOUD FOUNDRY, AWS, US East (VA).
+Unknown Price, Please check again; Or the service under this service plan is free.
+
+Commercial Model: Subscription,PPAYG,Cloud Credits,btpea (Non-Billable)
+for the following regions: CLOUD FOUNDRY, Microsoft Azure, Japan (Tokyo);CLOUD FOUNDRY, Microsoft Azure, US West (WA);CLOUD FOUNDRY, AWS, Europe (Frankfurt) EU Access;CLOUD FOUNDRY, AWS, Europe (Frankfurt);CLOUD FOUNDRY, Microsoft Azure, Singapore;CLOUD FOUNDRY, Google Cloud, US Central (IA);CLOUD FOUNDRY, AWS, Singapore;CLOUD FOUNDRY, AWS, South Korea (Seoul);CLOUD FOUNDRY, AWS, Brazil (São Paulo);CLOUD FOUNDRY, AWS, Australia (Sydney);CLOUD FOUNDRY, Microsoft Azure, Europe (Netherlands);CLOUD FOUNDRY, Microsoft Azure, Australia (Sydney);CLOUD FOUNDRY, AWS, Japan (Tokyo);CLOUD FOUNDRY, AWS, Canada (Montreal);CLOUD FOUNDRY, AWS, US East (VA);CLOUD FOUNDRY, Microsoft Azure, US East (VA);CLOUD FOUNDRY, Google Cloud, Europe (Frankfurt);CLOUD FOUNDRY, Google Cloud, India (Mumbai);CLOUD FOUNDRY, Google Cloud, KSA (Dammam – KSA Regulated Customers);CLOUD FOUNDRY, Microsoft Azure, Switzerland (EU Access);CLOUD FOUNDRY, Google Cloud, Israel (Tel Aviv);CLOUD FOUNDRY, Google Cloud, Australia Southeast (Sydney);CLOUD FOUNDRY, Microsoft Azure, Brazil South.
+Unknown Price, Please check again; Or the service under this service plan is free.

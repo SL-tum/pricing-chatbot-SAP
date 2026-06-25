@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "sourceMap": true,    "strictPropertyInitialization": false,
+    "noEmitOnError": true,
+    "useUnknownInCatchVariables": false,
+    "rootDir": "./",
+    "outDir": "./gen/srv",
+    "paths": {
+      "#cds-models/*": [
+        "./@cds-models/*"
+      ]
+    }
+  },
+  "files": ["./node_modules/@cap-js/cds-types/dist/cds-types.d.ts"],
+  "include": ["srv/**/*.ts"]
+}

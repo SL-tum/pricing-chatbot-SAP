@@ -1,0 +1,13 @@
+SAP Variant Configuration and Pricing
+Use our cloud services to build applications to configure and price your products accurately and efficiently. Leverage your knowledge of SAP variant configuration and sales pricing to model your products and pricing rules to use them everywhere. Enjoy smooth end-to-end data flow between your own applications and your SAP back end. Have relevant data replicated from SAP ERP or SAP S/4HANA to SAP Cloud to allow the cloud services to use it independently of the back-end load or availability.Boost your sales effectiveness with our micro services package.
+Service Plan: Test Tenant (Non-productive tenant, for api-based integrations, one tenant per backend client needed, one subaccount per tenant)
+                    No Features
+                    
+Commercial Model: Subscription (Billable)
+for the following regions: CLOUD FOUNDRY, AWS, Singapore;CLOUD FOUNDRY, AWS, Europe (Frankfurt);CLOUD FOUNDRY, AWS, US East (VA);CLOUD FOUNDRY, Microsoft Azure, Europe (Netherlands).
+Prices:
+Metric|Billing Block Size|Unit Price per Month
+------|------------------|--------------------
+Tenants|1|2,721.00
+Note:
+A Tenant means a Customer-specific instance of the Cloud Service

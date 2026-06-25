@@ -1,0 +1,8 @@
+SAP S/4HANA Cloud Extensibility Service
+The SAP S/4HANA Cloud Extensibility service allows you to extend the functionality of SAP S/4HANA Cloud and SAP Marketing Cloud systems. The service enables you to connect extension applications running on SAP BTP to an SAP S/4HANA Cloud or SAP Marketing Cloud system.Configure side-by-side extensibility of SAP S/4HANA Cloud systems on SAP BTP
+Service Plan: messaging ()
+                    No Features
+                    
+Commercial Model: Free,PPAYG (Non-Billable)
+for the following regions: CLOUD FOUNDRY, AWS, Australia (Sydney);CLOUD FOUNDRY, Google Cloud, Australia Southeast (Sydney).
+Unknown Price, Please check again; Or the service under this service plan is free.

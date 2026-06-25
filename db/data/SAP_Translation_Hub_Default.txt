@@ -1,0 +1,31 @@
+SAP Translation Hub
+SAP Translation Hub lets you translate your UI texts or documents by using a repository of SAP-approved translations and terminology as well as machine translation. You can access the translation resources by consuming a range of API methods or by using integrated workflow scenarios on a UI. Furthermore, developers can get suggestions for their source texts during the development phase, which improves accuracy and saves time.Translate UI texts and documents and get UI text suggestions during development.
+Service Plan: Default (SAP Translation Hub enables customers and partners to satisfy the demands of a global market by translating the short texts of products into additional languages. Translate short texts of existing products into additional languages by using multilingual texts stored in an SAP HANA database. The translation workflow capabilities of SAP Translation Hub enable you to translate the properties files in HTML5 applications that are built on SAP Business Technology Platform at the push of a button.)
+                    No Features
+                    
+Commercial Model: Cloud Credits,btpea (Billable)
+for the following regions: CLOUD FOUNDRY, AWS, US East (VA);CLOUD FOUNDRY, AWS, Europe (Frankfurt).
+Prices:
+Metric|Billing Block Size|Unit Price per Month
+------|------------------|--------------------
+Translated Characters|100,000|2.82
+Note:
+Total number of characters returned as translated text, including whitespace characters. Multiple-byte characters are counted as a single character.
+
+Commercial Model: Cloud Credits (Billable)
+for the following regions: SAP, SAP, US West (Chandler, Neo);SAP, SAP, US East (Sterling, Neo);SAP, SAP, Australia (Sydney, Neo);SAP, SAP, Europe (Rot, Neo);SAP, SAP, Europe (Frankfurt, Neo);SAP, SAP, Europe (Amsterdam, Neo);SAP, SAP, US East (Ashburn, Neo).
+Prices:
+Metric|Billing Block Size|Unit Price per Month
+------|------------------|--------------------
+Translated Characters|100,000|2.82
+Note:
+Total number of characters returned as translated text, including whitespace characters. Multiple-byte characters are counted as a single character.
+
+Commercial Model: payg (Billable)
+for the following regions: CLOUD FOUNDRY, AWS, US East (VA);CLOUD FOUNDRY, AWS, Europe (Frankfurt).
+Prices:
+Metric|Billing Block Size|Unit Price per Month
+------|------------------|--------------------
+Translated Characters|100,000|3.67
+Note:
+Total number of characters returned as translated text, including whitespace characters. Multiple-byte characters are counted as a single character.

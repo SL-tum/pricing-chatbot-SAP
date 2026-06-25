@@ -1,0 +1,18 @@
+SAP Secure Login Service for SAP GUI
+The SAP Secure Login Service for SAP GUI is a cloud service that enables multifactor authentication (MFA) and single sign-on if you use the SAP GUI interface.Enable multifactor authentication (MFA) and single sign-on for SAP GUI.
+Service Plan: Default ()
+                    No Features
+                    
+Commercial Model: Subscription (Billable)
+for the following regions: CLOUD FOUNDRY, Google Cloud, India (Mumbai);CLOUD FOUNDRY, Microsoft Azure, US West (WA);CLOUD FOUNDRY, AWS, Brazil (São Paulo);CLOUD FOUNDRY, Microsoft Azure, Europe (Netherlands);CLOUD FOUNDRY, Microsoft Azure, US East (VA);CLOUD FOUNDRY, AWS, Singapore;CLOUD FOUNDRY, AWS, Australia (Sydney);CLOUD FOUNDRY, AWS, Japan (Tokyo);CLOUD FOUNDRY, AWS, South Korea (Seoul);CLOUD FOUNDRY, Microsoft Azure, Japan (Tokyo);CLOUD FOUNDRY, Google Cloud, US Central (IA);CLOUD FOUNDRY, AWS, Europe (Frankfurt) EU Access;CLOUD FOUNDRY, Microsoft Azure, Singapore;CLOUD FOUNDRY, Google Cloud, Europe (Frankfurt);CLOUD FOUNDRY, AWS, US East (VA);CLOUD FOUNDRY, Microsoft Azure, Switzerland (EU Access);CLOUD FOUNDRY, Microsoft Azure, Australia (Sydney);CLOUD FOUNDRY, AWS, Canada (Montreal);CLOUD FOUNDRY, AWS, Europe (Frankfurt);CLOUD FOUNDRY, Google Cloud, KSA (Dammam – KSA Regulated Customers);CLOUD FOUNDRY, Google Cloud, Israel (Tel Aviv);CLOUD FOUNDRY, Microsoft Azure, Brazil South.
+Prices:
+Metric|Ranges|Fixed Fee|Unit Price per Month
+------|------|---------|--------------------
+Users (In Blocks of 500)| Up to 6|0.00 EUR450.00 EUR
+Users (In Blocks of 500)| Up to 20|0.00 EUR325.00 EUR
+Users (In Blocks of 500)| Up to 100|0.00 EUR210.00 EUR
+Users (In Blocks of 500)| Up to 200|0.00 EUR149.00 EUR
+Users (In Blocks of 500)| From 200|0.00 EUR110.00 EUR
+Note:
+User is any individual authorized to access the Cloud Service.
+The metric entitlement is not time-bound and does not deplete with usage, unless otherwise specified in the respective Product Supplement, Service Description Guide or Service Use Description.

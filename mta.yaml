@@ -1,0 +1,113 @@
+_schema-version: 3.3.0
+ID: pricing-chatbot
+version: 1.0.0
+description: "A simple CAP project."
+parameters:
+  enable-parallel-deployments: true
+  deploy_mode: html5-repo
+build-parameters:
+  before-all:
+    - builder: custom
+      commands:
+        - npm ci
+        - npx cds build --production
+modules:
+  - name: pricing-chatbot-srv
+    type: nodejs
+    path: gen/srv
+    parameters:
+      buildpack: nodejs_buildpack
+      readiness-health-check-type: http
+      readiness-health-check-http-endpoint: /health
+    build-parameters:
+      builder: npm
+    provides:
+      - name: srv-api # required by consumers of CAP services (e.g. approuter)
+        properties:
+          srv-url: ${default-url}
+    requires:
+      - name: pricing-chatbot-auth
+      - name: pricing-chatbot-destination
+      - name: pricing-chatbot-db
+
+  - name: pricing-chatbot-db-deployer
+    type: hdb
+    path: gen/db
+    parameters:
+      buildpack: nodejs_buildpack
+    requires:
+      - name: pricing-chatbot-db
+
+  - name: pricingchatbotuserchatbot
+    type: html5
+    path: app/user-chatbot
+    build-parameters:
+      build-result: dist
+      builder: custom
+      commands:
+        - npm ci
+        - npm run build:cf
+      supported-platforms:
+        []
+
+  - name: pricing-chatbot-app-deployer
+    type: com.sap.application.content
+    path: gen
+    requires:
+      - name: pricing-chatbot-html5-repo-host
+        parameters:
+          content-target: true
+    build-parameters:
+      build-result: app/
+      requires:
+        - name: pricingchatbotuserchatbot
+          artifacts:
+            - userchatbot.zip
+          target-path: app/
+
+
+
+resources:
+  - name: pricing-chatbot-auth
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: xsuaa
+      service-plan: application
+      path: ./xs-security.json
+
+      
+  - name: pricing-chatbot-destination
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: destination
+      service-plan: lite
+      config:
+        HTML5Runtime_enabled: true
+        init_data:
+          instance:
+            existing_destinations_policy: update
+            destinations:
+              - Name: pricing-chatbot-srv
+                Authentication: OAuth2UserTokenExchange
+                TokenServiceInstanceName: pricing-chatbot-auth
+                TokenServiceKeyName: pricing-chatbot-auth-key
+                URL: "~{srv-api/srv-url}"
+                sap.cloud.service: tum
+    requires:
+      - name: srv-api
+  - name: pricing-chatbot-db
+    type: com.sap.xs.hdi-container
+    parameters:
+      service: hana
+      service-plan: hdi-shared
+
+  - name: pricing-chatbot-html5-repo-host
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: html5-apps-repo
+      service-plan: app-host
+  - name: pricing-chatbot-html5-runtime
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: html5-apps-repo
+      service-plan: app-runtime

@@ -1,0 +1,50 @@
+<mvc:View
+    controllerName="tum.userchatbot.controller.UserChatbot"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page showHeader="false" class="chatPage">
+        <content>
+            <VBox class="chatContainer">
+                <ScrollContainer
+                    id="chatScroll"
+                    vertical="true"
+                    focusable="true"
+                    class="chatHistory">
+                    <List
+                        id="chatList"
+                        items="{ path: '/messages' }"
+                        class="chatList">
+                        <CustomListItem class="customListItem">
+                            <HBox
+                                class="chatMessageBox"
+                                justifyContent="{= ${role} === 'User' ? 'End' : 'Start'}">
+                                <VBox
+                                    class="{= ${role} === 'User' ? 'userMessageBox' : 'botMessageBox'}">
+                                    <Text
+                                        text="{text}"
+                                        class="chatMessageText" />
+                                </VBox>
+                            </HBox>
+                        </CustomListItem>
+                    </List>
+                </ScrollContainer>
+                <HBox class="chatInputContainer">
+                    <TextArea
+                        id="chatInput"
+                        class="customChatInput"
+                        placeholder="Type your message here..."
+                        width="auto"
+                        liveChange=".onInputChange" 
+                        growing="true" 
+                        growingMaxLines="7"/>
+                    <Button
+                        icon="sap-icon://paper-plane"
+                        type="Emphasized"
+                        press=".onSend" />
+                </HBox>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
+
+

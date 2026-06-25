@@ -1,0 +1,8 @@
+{
+  "xsappname": "pricing-chatbot",
+  "tenant-mode": "shared",
+  "scopes": [
+  ],
+  "attributes": [],
+  "role-templates": []
+}

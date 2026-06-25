@@ -1,0 +1,16 @@
+SAP Solution Lifecycle Management service for SAP BTP
+The SAP Solution Lifecycle Management service is intended for improving continuous deployment, configuration, and maintenance of your complex business applications by using the Multi-Target Application concept and the Solutions modeling.Deploy, subscribe and transport Solutions using Multi-Target Applications (MTA)
+Service Plan: Standard (Make full use of SAP Solution Lifecycle Management service for SAP BTP in the Neo Environment.)
+                    
+Technical Features:
+Feature|Quantity|Description|MoreInfo(link)
+-------|--------|-----------|--------------
+Deploying Solutions|Unlimited|You can provision a Solution by deploying it using a Multitarget Application archive as the Solution carrier. You can deploy it for use in your own subaccount, or in your subaccount for use by another subaccount. The number of provided Solutions is unlimited.|()
+Updating Solutions|Unlimited|You can update your Solution using the cockpit in order to enhance it with new capabilities or technical improvements.|()
+Monitoring Solutions|Unlimited|Using the Solutions view in your subaccount, you can monitor the state of the individual components of a given Solution.|()
+Deleting Solutions|Unlimited|You can remove a Solution using either the cockpit or the SAP Business Technology Platform Command Client once it is no longer needed.|()
+Subscribing to Multitenant Solutions|Unlimited|You can use a multitenant Solution provided by another subaccount by subscribing to it.|()
+                    
+Commercial Model: Cloud Credits (Non-Billable)
+for the following regions: SAP, SAP, Australia (Sydney, Neo);SAP, SAP, Europe (Frankfurt, Neo);SAP, SAP, Europe (Rot, Neo);SAP, SAP, Canada (Toronto, Neo);SAP, SAP, US West (Chandler, Neo);SAP, SAP, US East (Sterling, Neo);SAP, SAP, Europe (Amsterdam, Neo);SAP, SAP, US West (Colorado Springs, Neo);SAP, SAP, UAE (Dubai);SAP, SAP, US East (Ashburn, Neo);SAP, SAP, Japan (Tokyo, Neo);SAP, SAP, KSA (Riyadh);SAP, SAP, Brazil (São Paulo, Neo).
+Unknown Price, Please check again; Or the service under this service plan is free.

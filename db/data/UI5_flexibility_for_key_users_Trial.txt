@@ -1,0 +1,8 @@
+UI5 flexibility for key users
+The UI5 flexibility service for key users lets you provide UI adaptation capabilities for your UI5 applications. Users of your applications can change the user interface of your applications in an upgrade-safe and modification-free way, without affecting any other customer.Add UI adaptation to your UI5 applications.
+Service Plan: Trial (Try out key user adaptation in a trial account.)
+                    No Features
+                    
+Commercial Model: Free (Non-Billable)
+for the following regions: CLOUD FOUNDRY, AWS, US East (VA);CLOUD FOUNDRY, Microsoft Azure, Singapore.
+Unknown Price, Please check again; Or the service under this service plan is free.

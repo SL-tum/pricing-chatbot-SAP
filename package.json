@@ -1,0 +1,113 @@
+{
+  "name": "pricing-chatbot",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@cap-js/hana": "^1",
+    "@langchain/community": "^0.3.19",
+    "@langchain/core": "^0.3.23",
+    "@sap-cloud-sdk/http-client": "^3.24.0",
+    "@sap-cloud-sdk/resilience": "^3.24.0",
+    "@sap/cds": "^8.6.1",
+    "@sap/cds-dk": "^8.6.1",
+    "@sap/xssec": "^4",
+    "@types/node": "^22.12.0",
+    "buffer": "^6.0.3",
+    "cap-llm-plugin": "^1.4.5",
+    "express": "^4",
+    "langchain": "^0.3.7",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "@cap-js/cds-typer": ">=0.1",
+    "@cap-js/cds-types": "^0.9.0",
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^8",
+    "@types/chai": "^5.0.1",
+    "cds-launchpad-plugin": "^2.2.0",
+    "chai": "^5.1.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.4.2",
+    "tsx": "^4.22.4",
+    "typescript": "^5"
+  },
+  "scripts": {
+    "prep": "npm i && run-p prep:*",
+    "prep:web-document-storage": "cd app/document-storage && npm i",
+    "prep:web-user-chatbot": "cd app/user-chatbot && npm i",
+    "build": "rimraf resources mta_archives && mbt build --mtar archive",
+    "build:cf": "cds build --production && npx tsc",
+    "deploy": "cf deploy mta_archives/tum-ai-demo_1.0.0.mtar",
+    "start": "cds-serve",
+    "watch": "cds-tsx w",
+    "watch-hybrid": "cds-tsx w --profile hybrid",
+    "watch-user-chatbot": "cds watch --open user-chatbot/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-document-storage": "cds watch --open document-storage/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "imports": {
+    "#cds-models/*": "./@cds-models/*/index.js"
+  },
+  "cds": {
+    "requires": {
+      "auth": {
+        "kind": "xsuaa"
+      },
+      "db": {
+        "binding": {
+          "type": "cf",
+          "apiEndpoint": "https://api.cf.eu10-004.hana.ondemand.com",
+          "org": "msgsystemsag-06-tum-ai-praktikum-sbx-tdd",
+          "space": "dev",
+          "instance": "pricing-chatbot-db",
+          "key": "pricing-chatbot-db-key",
+          "resolved": false
+        },
+        "kind": "hana-cloud",
+        "vcap": {
+          "name": "db"
+        }
+      },
+      "destinations": {
+        "binding": {
+          "type": "cf",
+          "apiEndpoint": "https://api.cf.eu10-004.hana.ondemand.com",
+          "org": "msgsystemsag-06-tum-ai-praktikum-sbx-tdd",
+          "space": "dev",
+          "instance": "pricing-chatbot-destination",
+          "key": "pricing-chatbot-destination-key",
+          "resolved": false
+        },
+        "kind": "destinations",
+        "vcap": {
+          "name": "destinations"
+        }
+      },
+      "html5-repo": {
+        "kind": "html5-apps-repo",
+        "service": "pricing-chatbot-html5-repo-host"
+      },
+      "GENERATIVE_AI_HUB": {
+        "CHAT_MODEL_DESTINATION_NAME": "AICoreAzureOpenAIDestination",
+        "CHAT_MODEL_DEPLOYMENT_URL": "v2/inference/deployments/d8321d6bf8269e7b",
+        "CHAT_MODEL_RESOURCE_GROUP": "default",
+        "CHAT_MODEL_API_VERSION": "2023-05-15",
+        "EMBEDDING_MODEL_DESTINATION_NAME": "AICoreAzureOpenAIDestination",
+        "EMBEDDING_MODEL_DEPLOYMENT_URL": "v2/inference/deployments/da748b6c5c5b913b",
+        "EMBEDDING_MODEL_RESOURCE_GROUP": "default",
+        "EMBEDDING_MODEL_API_VERSION": "2023-05-15"
+      },
+      "AICoreAzureOpenAIDestination": {
+        "kind": "rest",
+        "credentials": {
+          "destination": "GENERATIVE_AI_HUB",
+          "requestTimeout": "2147483647"
+        }
+      }
+    },
+    "sapux": [
+      "app/user-chatbot"
+    ]
+  }
+}

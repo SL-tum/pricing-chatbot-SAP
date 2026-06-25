@@ -1,0 +1,22 @@
+{
+  "Component-dbg.js": 1736639996000,
+  "model/models.js": 1736639996000,
+  "controller/UserChatbot.controller.js": 1738246918170,
+  "controller/App.controller.js": 1736639996000,
+  "manifest.json": 1738250406684,
+  "Component.js": 1736639996000,
+  "i18n/i18n.properties": 1736639996000,
+  "Component.js.map": 1738250406930,
+  "controller/UserChatbot-dbg.controller.js": 1738246918170,
+  "controller/UserChatbot.controller.js.map": 1738250406946,
+  "controller/App-dbg.controller.js": 1736639996000,
+  "controller/App.controller.js.map": 1738250406924,
+  "model/models-dbg.js": 1736639996000,
+  "model/models.js.map": 1738250406933,
+  "Component-preload.js": 1738250407199,
+  "Component-preload.js.map": 1738250407199,
+  "view/UserChatbot.view.xml": 1736639996000,
+  "view/App.view.xml": 1736639996000,
+  "css/style.css": 1736639996000,
+  "index.html": 1736639996000
+}

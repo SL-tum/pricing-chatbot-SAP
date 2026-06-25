@@ -1,0 +1,14 @@
+# Ignore artifacts:
+gen/
+src/gen/
+src/app/**/dist/
+dist/
+coverage/
+src/coverage/
+doc/
+*.md
+src/srv/lib/types/
+
+#IDEs:
+.vscode
+.idea

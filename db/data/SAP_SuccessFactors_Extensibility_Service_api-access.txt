@@ -1,0 +1,8 @@
+SAP SuccessFactors Extensibility Service
+The SAP SuccessFactors Extensibility service allows you to extend the functionality of SAP SuccessFactors systems. The service enables you to connect extension applications running on SAP BTP to an SAP SuccessFactors system.Configure side-by-side extensibility of SAP SuccessFactors systems on SAP BTP
+Service Plan: api-access ()
+                    No Features
+                    
+Commercial Model: Cloud Credits,btpea,PPAYG,Subscription (Non-Billable)
+for the following regions: CLOUD FOUNDRY, AWS, US East (VA);CLOUD FOUNDRY, Google Cloud, US Central (IA);CLOUD FOUNDRY, AWS, Europe (Frankfurt);CLOUD FOUNDRY, AWS, Brazil (São Paulo);CLOUD FOUNDRY, Microsoft Azure, Japan (Tokyo);CLOUD FOUNDRY, AWS, Canada (Montreal);CLOUD FOUNDRY, AWS, Singapore;CLOUD FOUNDRY, Microsoft Azure, Singapore;CLOUD FOUNDRY, AWS, Europe (Frankfurt) EU Access;CLOUD FOUNDRY, Microsoft Azure, US East (VA);CLOUD FOUNDRY, AWS, Australia (Sydney);CLOUD FOUNDRY, AWS, Japan (Tokyo);CLOUD FOUNDRY, Microsoft Azure, US West (WA);CLOUD FOUNDRY, Microsoft Azure, Europe (Netherlands).
+Unknown Price, Please check again; Or the service under this service plan is free.
