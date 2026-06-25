@@ -1,0 +1,16 @@
+SAP Build Code
+SAP Build Code leverages ready-to-use SAP services and generative AI capabilities to simplify the development of SAPUI5, SAP Fiori, mobile, and CAP applications running on SAP BTP using the Cloud Foundry runtime.
+Develop UI5, SAP Fiori, mobile, and CAP apps on SAP BTP using AI-based tools.
+Service Plan: free (Use the free plan for evaluation purposes of the design time features. Restrictions apply. Only community support is available for free tier service plans and these are not subject to SLAs.)
+No Features
+Commercial Model: Cloud Credits,btpea,PPAYG (Billable)
+for the following regions: CLOUD FOUNDRY, AWS, US East (VA);CLOUD FOUNDRY, AWS, Europe (Frankfurt);CLOUD FOUNDRY, AWS, Australia (Sydney);CLOUD FOUNDRY, Microsoft Azure, Europe (Netherlands);CLOUD FOUNDRY, AWS, Brazil (São Paulo);CLOUD FOUNDRY, AWS, Japan (Tokyo);CLOUD FOUNDRY, AWS, Singapore;CLOUD FOUNDRY, Microsoft Azure, Australia (Sydney);CLOUD FOUNDRY, Google Cloud, US Central (IA);CLOUD FOUNDRY, Microsoft Azure, US East (VA);CLOUD FOUNDRY, Microsoft Azure, US West (WA);CLOUD FOUNDRY, Google Cloud, India (Mumbai);CLOUD FOUNDRY, Google Cloud, Europe (Frankfurt);CLOUD FOUNDRY, AWS, Canada (Montreal);CLOUD FOUNDRY, Microsoft Azure, Japan (Tokyo);CLOUD FOUNDRY, Google Cloud, Australia Southeast (Sydney);CLOUD FOUNDRY, Microsoft Azure, Brazil South.
+Prices:
+Metric|Billing Block Size|Unit Price per Month
+------|------------------|--------------------
+Capacity Units|1|0.00
+Note:
+Capacity Units are the number of units consumed by the usage of the services as outlined in the solution specific product supplement.
+Commercial Model: Free (Non-Billable)
+for the following regions: CLOUD FOUNDRY, AWS, US East (VA);CLOUD FOUNDRY, AWS, Europe (Frankfurt);CLOUD FOUNDRY, Microsoft Azure, Singapore;CLOUD FOUNDRY, Microsoft Azure, Europe (Netherlands);CLOUD FOUNDRY, AWS, Australia (Sydney);CLOUD FOUNDRY, AWS, Brazil (São Paulo);CLOUD FOUNDRY, AWS, Singapore;CLOUD FOUNDRY, AWS, Japan (Tokyo);CLOUD FOUNDRY, Microsoft Azure, US East (VA);CLOUD FOUNDRY, Microsoft Azure, Australia (Sydney);CLOUD FOUNDRY, Google Cloud, US Central (IA);CLOUD FOUNDRY, Google Cloud, India (Mumbai);CLOUD FOUNDRY, Microsoft Azure, US West (WA);CLOUD FOUNDRY, Google Cloud, Europe (Frankfurt);CLOUD FOUNDRY, Microsoft Azure, Japan (Tokyo);CLOUD FOUNDRY, Google Cloud, Australia Southeast (Sydney);CLOUD FOUNDRY, AWS, Canada (Montreal);CLOUD FOUNDRY, Microsoft Azure, Brazil South;CLOUD FOUNDRY, AWS, Europe (Frankfurt) EU Access.
+Unknown Price, Please check again; Or the service under this service plan is free.

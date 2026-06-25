@@ -1,0 +1,38 @@
+SAP Print service
+SAP Print service is used in business applications that are based on SAP Business Technology Platform (SAP BTP) as well as other SAP Cloud products across SAP Intelligent Enterprise Suite. Using this service, the business application's development team can easily establish the connection between SAP Print service and the customer’s local printers. This means you can significantly reduce the development effort.
+Manage print queues, connect print clients, and monitor print status.
+Service Plan: Sender ()
+No Features
+Commercial Model: Subscription (Billable)
+for the following regions: CLOUD FOUNDRY, Alibaba, China (Shanghai);CLOUD FOUNDRY, Microsoft Azure, China (North 3).
+Prices:
+Metric|Ranges|Fixed Fee|Unit Price per Month
+------|------|---------|--------------------
+Documents (in Blocks of 1,000)|10|0.00 EUR|39.00 EUR
+Documents (in Blocks of 1,000)|100|0.00 EUR|30.00 EUR
+Documents (in Blocks of 1,000)|1,000|0.00 EUR|25.00 EUR
+Documents (in Blocks of 1,000)|From previous bound|0.00 EUR|20.00 EUR
+Note:
+Documents are counted for each single file with up to 250KB, for a document with more than 250KB is calculated by dividing the total size of the file by 250 and any remainder shall be counted as a single document.
+Commercial Model: Cloud Credits,btpea (Billable)
+for the following regions: CLOUD FOUNDRY, AWS, Europe (Frankfurt);CLOUD FOUNDRY, AWS, US East (VA);CLOUD FOUNDRY, Microsoft Azure, Europe (Netherlands);CLOUD FOUNDRY, Microsoft Azure, US East (VA);CLOUD FOUNDRY, Microsoft Azure, US West (WA);CLOUD FOUNDRY, Microsoft Azure, Europe (Frankfurt);CLOUD FOUNDRY, AWS, Europe (Frankfurt) EU Access;CLOUD FOUNDRY, Microsoft Azure, Switzerland (EU Access);CLOUD FOUNDRY, Microsoft Azure, China (North 3).
+Prices:
+Metric|Ranges|Fixed Fee|Unit Price per Month
+------|------|---------|--------------------
+Documents (in Blocks of 1,000)|10|0.00 EUR|39.00 EUR
+Documents (in Blocks of 1,000)|100|0.00 EUR|30.00 EUR
+Documents (in Blocks of 1,000)|1,000|0.00 EUR|25.00 EUR
+Documents (in Blocks of 1,000)|From previous bound|0.00 EUR|20.00 EUR
+Note:
+Documents are counted for each single file with up to 250KB, for a document with more than 250KB is calculated by dividing the total size of the file by 250 and any remainder shall be counted as a single document.
+Commercial Model: payg (Billable)
+for the following regions: CLOUD FOUNDRY, AWS, Europe (Frankfurt);CLOUD FOUNDRY, AWS, US East (VA);CLOUD FOUNDRY, Microsoft Azure, Europe (Netherlands);CLOUD FOUNDRY, Microsoft Azure, US East (VA);CLOUD FOUNDRY, Microsoft Azure, US West (WA);CLOUD FOUNDRY, Microsoft Azure, Europe (Frankfurt);CLOUD FOUNDRY, Microsoft Azure, China (North 3).
+Prices:
+Metric|Ranges|Fixed Fee|Unit Price per Month
+------|------|---------|--------------------
+Documents (in Blocks of 1,000)|10|0.00 EUR|50.70 EUR
+Documents (in Blocks of 1,000)|100|0.00 EUR|39.00 EUR
+Documents (in Blocks of 1,000)|1,000|0.00 EUR|32.50 EUR
+Documents (in Blocks of 1,000)|From previous bound|0.00 EUR|26.00 EUR
+Note:
+Documents are counted for each single file with up to 250KB, for a document with more than 250KB is calculated by dividing the total size of the file by 250 and any remainder shall be counted as a single document.

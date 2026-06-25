@@ -1,0 +1,11 @@
+SAP BTP, Cloud Foundry Runtime
+The SAP BTP, Cloud Foundry runtime lets you develop polyglot cloud-native applications and run them on the SAP BTP Cloud Foundry environment.
+Operate polyglot applications.
+Service Plan: Memory (Standard Plan for Trial)
+Technical Features:
+Feature|Quantity|Description|MoreInfo(link)
+-------|--------|-----------|--------------
+GB Memory|4|SAP may change or remove quotas on resource usage at any time without notice. SAP may stop resources after 24 hours of idle time. You can restart stopped resources during the Trial Period. SAP requires Your email address, first name and last name to create Your user account for Cloud Foundry. Accounts will be created in third party data centers, by SAP and/or a third party. SAP uses these data solely for the purpose of account creation and will delete them when Your trial account is deleted.|()
+Commercial Model: Free (Non-Billable)
+for the following regions: CLOUD FOUNDRY, AWS, US East (VA);CLOUD FOUNDRY, AWS, Singapore;CLOUD FOUNDRY, SAP, US (Sterling).
+Unknown Price, Please check again; Or the service under this service plan is free.

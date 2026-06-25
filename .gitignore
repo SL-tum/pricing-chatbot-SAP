@@ -4,6 +4,7 @@ _out
 *.sqlite
 connection.properties
 default-*.json
+tools/generated-pricing/
 .env
 .env.*
 !.env.example

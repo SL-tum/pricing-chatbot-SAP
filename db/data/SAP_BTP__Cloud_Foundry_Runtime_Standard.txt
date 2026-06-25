@@ -1,0 +1,32 @@
+SAP BTP, Cloud Foundry Runtime
+The SAP BTP, Cloud Foundry runtime lets you develop polyglot cloud-native applications and run them on the SAP BTP Cloud Foundry environment.
+Operate polyglot applications.
+Service Plan: Standard (Create an org in the Cloud Foundry environment to start developing polyglot cloud-native applications.)
+Technical Features:
+Feature|Quantity|Description|MoreInfo(link)
+-------|--------|-----------|--------------
+GB Memory||Runtime memory for your applications. The available memory quota depends on the commercial model you are using.|Commercial Models(https://help.sap.com/docs/btp/sap-business-technology-platform/commercial-models)
+Commercial Model: Cloud Credits,btpea (Billable)
+for the following regions: CLOUD FOUNDRY, AWS, Australia (Sydney);CLOUD FOUNDRY, AWS, Europe (Frankfurt);CLOUD FOUNDRY, AWS, US East (VA);CLOUD FOUNDRY, Microsoft Azure, Europe (Netherlands);CLOUD FOUNDRY, Microsoft Azure, Singapore;CLOUD FOUNDRY, AWS, Brazil (São Paulo);CLOUD FOUNDRY, Microsoft Azure, US East (VA);CLOUD FOUNDRY, AWS, Japan (Tokyo);CLOUD FOUNDRY, AWS, Singapore;CLOUD FOUNDRY, Google Cloud, US Central (IA);CLOUD FOUNDRY, Microsoft Azure, Australia (Sydney);CLOUD FOUNDRY, Google Cloud, Europe (Frankfurt);CLOUD FOUNDRY, Microsoft Azure, US West (WA);CLOUD FOUNDRY, AWS, Canada (Montreal);CLOUD FOUNDRY, Google Cloud, India (Mumbai);CLOUD FOUNDRY, Microsoft Azure, Japan (Tokyo);CLOUD FOUNDRY, Microsoft Azure, Brazil South;CLOUD FOUNDRY, Google Cloud, Australia Southeast (Sydney);CLOUD FOUNDRY, Google Cloud, KSA (Dammam – KSA Regulated Customers);CLOUD FOUNDRY, AWS, South Korea (Seoul);CLOUD FOUNDRY, AWS, US West (Oregon);CLOUD FOUNDRY, Google Cloud, Japan (Tokyo);CLOUD FOUNDRY, Google Cloud, Israel (Tel Aviv);SAP, SAP, UAE (Dubai);CLOUD FOUNDRY, Google Cloud, KSA (Dammam – KSA Non-Regulated Customers);CLOUD FOUNDRY, AWS, Europe (Milan);CLOUD FOUNDRY, Microsoft Azure, Europe (Frankfurt);CLOUD FOUNDRY, Microsoft Azure, Canada (Toronto);CLOUD FOUNDRY, Google Cloud, Japan (Osaka);CLOUD FOUNDRY, SAP, US West (Colorado);CLOUD FOUNDRY, SAP, Japan (Tokyo);CLOUD FOUNDRY, SAP, Europe (Frankfurt) SAP EU Access;CLOUD FOUNDRY, Google Cloud, Brazil (São Paulo);CLOUD FOUNDRY, AWS, Europe (Frankfurt) EU Access;CLOUD FOUNDRY, SAP, Europe (Rot) SAP Cloud Infrastructure EU Access;CLOUD FOUNDRY, SAP, US (Sterling);CLOUD FOUNDRY, Microsoft Azure, Switzerland (EU Access);CLOUD FOUNDRY, Microsoft Azure, China (North 3);CLOUD FOUNDRY, Alibaba, China (Shanghai).
+Prices:
+Metric|Billing Block Size|Unit Price per Month
+------|------------------|--------------------
+GB Memory|1|85.00
+Note:
+GB of memory is defined as an amount of memory.
+Commercial Model: Subscription (Billable)
+for the following regions: CLOUD FOUNDRY, AWS, Australia (Sydney);CLOUD FOUNDRY, AWS, Europe (Frankfurt);CLOUD FOUNDRY, AWS, US East (VA);CLOUD FOUNDRY, Microsoft Azure, Europe (Netherlands);CLOUD FOUNDRY, Microsoft Azure, Singapore;CLOUD FOUNDRY, AWS, Brazil (São Paulo);CLOUD FOUNDRY, AWS, Japan (Tokyo);CLOUD FOUNDRY, AWS, Singapore;CLOUD FOUNDRY, Microsoft Azure, US East (VA);CLOUD FOUNDRY, Google Cloud, US Central (IA);CLOUD FOUNDRY, Microsoft Azure, Australia (Sydney);CLOUD FOUNDRY, Google Cloud, Europe (Frankfurt);CLOUD FOUNDRY, Microsoft Azure, US West (WA);CLOUD FOUNDRY, AWS, Canada (Montreal);CLOUD FOUNDRY, Google Cloud, India (Mumbai);CLOUD FOUNDRY, Microsoft Azure, Brazil South;CLOUD FOUNDRY, Google Cloud, Australia Southeast (Sydney);CLOUD FOUNDRY, Microsoft Azure, Japan (Tokyo);CLOUD FOUNDRY, Google Cloud, KSA (Dammam – KSA Regulated Customers);CLOUD FOUNDRY, AWS, US West (Oregon);CLOUD FOUNDRY, AWS, South Korea (Seoul);CLOUD FOUNDRY, Google Cloud, Japan (Tokyo);CLOUD FOUNDRY, Google Cloud, Israel (Tel Aviv);SAP, SAP, UAE (Dubai);CLOUD FOUNDRY, Google Cloud, KSA (Dammam – KSA Non-Regulated Customers);CLOUD FOUNDRY, AWS, Europe (Milan);CLOUD FOUNDRY, Microsoft Azure, Europe (Frankfurt);CLOUD FOUNDRY, Google Cloud, Japan (Osaka);CLOUD FOUNDRY, Microsoft Azure, Canada (Toronto);CLOUD FOUNDRY, SAP, US West (Colorado);CLOUD FOUNDRY, SAP, Japan (Tokyo);CLOUD FOUNDRY, SAP, Europe (Frankfurt) SAP EU Access;CLOUD FOUNDRY, Google Cloud, Brazil (São Paulo);CLOUD FOUNDRY, AWS, Europe (Frankfurt) EU Access;CLOUD FOUNDRY, SAP, Europe (Rot) SAP Cloud Infrastructure EU Access;CLOUD FOUNDRY, SAP, US (Sterling);CLOUD FOUNDRY, Microsoft Azure, Switzerland (EU Access);CLOUD FOUNDRY, Microsoft Azure, China (North 3);CLOUD FOUNDRY, Alibaba, China (Shanghai).
+Prices:
+Metric|Billing Block Size|Unit Price per Month
+------|------------------|--------------------
+GB Memory|1|85.00
+Note:
+GB of memory is defined as an amount of memory.
+Commercial Model: payg (Billable)
+for the following regions: CLOUD FOUNDRY, AWS, Australia (Sydney);CLOUD FOUNDRY, AWS, Europe (Frankfurt);CLOUD FOUNDRY, AWS, US East (VA);CLOUD FOUNDRY, Microsoft Azure, Europe (Netherlands);CLOUD FOUNDRY, Microsoft Azure, Singapore;CLOUD FOUNDRY, AWS, Brazil (São Paulo);CLOUD FOUNDRY, Microsoft Azure, US East (VA);CLOUD FOUNDRY, AWS, Japan (Tokyo);CLOUD FOUNDRY, AWS, Singapore;CLOUD FOUNDRY, Google Cloud, US Central (IA);CLOUD FOUNDRY, Microsoft Azure, Australia (Sydney);CLOUD FOUNDRY, Google Cloud, Europe (Frankfurt);CLOUD FOUNDRY, Microsoft Azure, US West (WA);CLOUD FOUNDRY, AWS, Canada (Montreal);CLOUD FOUNDRY, Google Cloud, India (Mumbai);CLOUD FOUNDRY, Microsoft Azure, Japan (Tokyo);CLOUD FOUNDRY, Google Cloud, Australia Southeast (Sydney);CLOUD FOUNDRY, Google Cloud, KSA (Dammam – KSA Regulated Customers);CLOUD FOUNDRY, AWS, South Korea (Seoul);CLOUD FOUNDRY, Microsoft Azure, Brazil South;CLOUD FOUNDRY, Google Cloud, Japan (Tokyo);CLOUD FOUNDRY, Google Cloud, Israel (Tel Aviv);SAP, SAP, UAE (Dubai);CLOUD FOUNDRY, AWS, US West (Oregon);CLOUD FOUNDRY, Google Cloud, KSA (Dammam – KSA Non-Regulated Customers);CLOUD FOUNDRY, Microsoft Azure, Europe (Frankfurt);CLOUD FOUNDRY, Microsoft Azure, Canada (Toronto);CLOUD FOUNDRY, Google Cloud, Japan (Osaka);CLOUD FOUNDRY, SAP, US West (Colorado);CLOUD FOUNDRY, AWS, Europe (Milan);CLOUD FOUNDRY, SAP, Japan (Tokyo);CLOUD FOUNDRY, Google Cloud, Brazil (São Paulo);CLOUD FOUNDRY, SAP, US (Sterling);CLOUD FOUNDRY, Microsoft Azure, China (North 3);CLOUD FOUNDRY, Alibaba, China (Shanghai).
+Prices:
+Metric|Billing Block Size|Unit Price per Month
+------|------------------|--------------------
+GB Memory|1|110.50
+Note:
+GB of memory is defined as an amount of memory.
