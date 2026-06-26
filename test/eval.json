@@ -1,0 +1,611 @@
+[
+  {
+    "id": "Q001",
+    "category": "hana_cloud_pricing",
+    "question": "According to SAP Discovery Center, what is the monthly unit price for one SAP HANA Cloud Capacity Unit if the listed price is EUR 0.75 per month?",
+    "expected_source_hint": "SAP HANA Cloud service plan, Capacity Units, EUR 0.75 per month"
+  },
+  {
+    "id": "Q002",
+    "category": "hana_cloud_pricing",
+    "question": "If SAP HANA Cloud costs EUR 0.75 per Capacity Unit per month, how would the estimated monthly cost change when increasing from 10 to 20 Capacity Units?",
+    "expected_source_hint": "SAP HANA Cloud, Capacity Units, unit price EUR 0.75"
+  },
+  {
+    "id": "Q003",
+    "category": "hana_cloud_pricing",
+    "question": "For a small prototype using 5 SAP HANA Cloud Capacity Units at EUR 0.75 per month each, what pricing information should the estimator use?",
+    "expected_source_hint": "SAP HANA Cloud Capacity Unit pricing"
+  },
+  {
+    "id": "Q004",
+    "category": "hana_cloud_pricing",
+    "question": "Does SAP Discovery Center list SAP HANA Cloud pricing by Capacity Unit or by a fixed monthly subscription?",
+    "expected_source_hint": "SAP HANA Cloud Capacity Units"
+  },
+  {
+    "id": "Q005",
+    "category": "hana_cloud_pricing",
+    "question": "If a project stores embeddings in SAP HANA Cloud, which Discovery Center pricing item should be checked: Vector Engine license or HANA Cloud Capacity Units?",
+    "expected_source_hint": "SAP HANA Cloud Capacity Units, vector capabilities"
+  },
+  {
+    "id": "Q006",
+    "category": "hana_cloud_pricing",
+    "question": "How can a user estimate the cost impact of increasing SAP HANA Cloud usage from 50 to 100 Capacity Units when the unit price is EUR 0.75 per month?",
+    "expected_source_hint": "SAP HANA Cloud, Capacity Unit estimator"
+  },
+  {
+    "id": "Q007",
+    "category": "hana_cloud_pricing",
+    "question": "What does the EUR 0.75 monthly price refer to in the SAP HANA Cloud service plan?",
+    "expected_source_hint": "SAP HANA Cloud, Capacity Units, unit price per month"
+  },
+  {
+    "id": "Q008",
+    "category": "hana_cloud_pricing",
+    "question": "If the estimator shows SAP HANA Cloud with a billing block size of 1 Capacity Unit, what does that mean for estimating 12 Capacity Units?",
+    "expected_source_hint": "SAP HANA Cloud, billing block size, Capacity Units"
+  },
+  {
+    "id": "Q009",
+    "category": "hana_cloud_pricing",
+    "question": "Which SAP Discovery Center service should be checked for estimating database costs in a RAG application using vector embeddings?",
+    "expected_source_hint": "SAP HANA Cloud service catalog, Capacity Units"
+  },
+  {
+    "id": "Q010",
+    "category": "hana_cloud_pricing",
+    "question": "For a RAG assistant using SAP HANA Cloud as the database, which pricing unit from Discovery Center is most relevant for cost estimation?",
+    "expected_source_hint": "SAP HANA Cloud, Capacity Units"
+  },
+
+  {
+    "id": "Q011",
+    "category": "ai_core_pricing",
+    "question": "What is the listed price of the SAP AI Core Free Plan in SAP Discovery Center?",
+    "expected_source_hint": "SAP AI Core Free Plan, EUR 0.00"
+  },
+  {
+    "id": "Q012",
+    "category": "ai_core_pricing",
+    "question": "What is the listed price of the SAP AI Core Standard plan if Discovery Center shows EUR 1.04?",
+    "expected_source_hint": "SAP AI Core Standard, EUR 1.04"
+  },
+  {
+    "id": "Q013",
+    "category": "ai_core_pricing",
+    "question": "What is the listed price of the SAP AI Core Extended plan if Discovery Center shows EUR 1.04?",
+    "expected_source_hint": "SAP AI Core Extended, EUR 1.04"
+  },
+  {
+    "id": "Q014",
+    "category": "ai_core_pricing",
+    "question": "Which SAP AI Core plan is listed as EUR 0.00 in SAP Discovery Center?",
+    "expected_source_hint": "SAP AI Core Free Plan"
+  },
+  {
+    "id": "Q015",
+    "category": "ai_core_pricing",
+    "question": "How much more expensive is SAP AI Core Standard than the Free Plan if the prices are EUR 1.04 and EUR 0.00?",
+    "expected_source_hint": "SAP AI Core Free Plan, Standard plan"
+  },
+  {
+    "id": "Q016",
+    "category": "ai_core_pricing",
+    "question": "If SAP AI Core Standard and Extended are both listed at EUR 1.04, which plan is cheaper according to the listed unit price?",
+    "expected_source_hint": "SAP AI Core Standard, Extended, EUR 1.04"
+  },
+  {
+    "id": "Q017",
+    "category": "ai_core_pricing",
+    "question": "For a prototype that only needs a free SAP AI Core plan, which Discovery Center price should be cited?",
+    "expected_source_hint": "SAP AI Core Free Plan, EUR 0.00"
+  },
+  {
+    "id": "Q018",
+    "category": "ai_core_pricing",
+    "question": "If a project uses SAP AI Core for model or generative AI workloads, which service catalog entry should be used for the cost estimate?",
+    "expected_source_hint": "SAP AI Core service catalog"
+  },
+  {
+    "id": "Q019",
+    "category": "ai_core_pricing",
+    "question": "If SAP AI Core Standard is listed as EUR 1.04, what number should be retrieved when the user asks for the Standard plan price?",
+    "expected_source_hint": "SAP AI Core Standard, EUR 1.04"
+  },
+  {
+    "id": "Q020",
+    "category": "ai_core_pricing",
+    "question": "Can SAP AI Core be estimated from SAP Discovery Center using service plans such as Free, Standard, and Extended?",
+    "expected_source_hint": "SAP AI Core service plans"
+  },
+
+  {
+    "id": "Q021",
+    "category": "ai_launchpad_pricing",
+    "question": "What is the monthly price of SAP AI Launchpad Standard if SAP Discovery Center lists it as EUR 583.00?",
+    "expected_source_hint": "SAP AI Launchpad Standard, EUR 583.00 per month"
+  },
+  {
+    "id": "Q022",
+    "category": "ai_launchpad_pricing",
+    "question": "Is SAP AI Launchpad Standard priced per month or per hour if Discovery Center shows EUR 583.00 as unit price per month?",
+    "expected_source_hint": "SAP AI Launchpad Standard, unit price per month"
+  },
+  {
+    "id": "Q023",
+    "category": "ai_launchpad_pricing",
+    "question": "For a project using SAP AI Launchpad to manage AI scenarios, which EUR 583.00 monthly service plan should be checked?",
+    "expected_source_hint": "SAP AI Launchpad Standard"
+  },
+  {
+    "id": "Q024",
+    "category": "ai_launchpad_pricing",
+    "question": "How much would SAP AI Launchpad Standard cost for 2 months if the monthly price is EUR 583.00?",
+    "expected_source_hint": "SAP AI Launchpad Standard, monthly price EUR 583.00"
+  },
+  {
+    "id": "Q025",
+    "category": "ai_launchpad_pricing",
+    "question": "How does the SAP AI Launchpad Standard monthly price of EUR 583.00 compare with SAP AI Core Standard listed at EUR 1.04?",
+    "expected_source_hint": "SAP AI Launchpad Standard, SAP AI Core Standard"
+  },
+  {
+    "id": "Q026",
+    "category": "ai_launchpad_pricing",
+    "question": "Which Discovery Center service has a Standard plan listed at EUR 583.00 per month for managing AI use cases?",
+    "expected_source_hint": "SAP AI Launchpad Standard"
+  },
+  {
+    "id": "Q027",
+    "category": "ai_launchpad_pricing",
+    "question": "If a team only needs to run AI workloads but not manage them through Launchpad, which EUR 583.00 service might be unnecessary?",
+    "expected_source_hint": "SAP AI Launchpad Standard"
+  },
+  {
+    "id": "Q028",
+    "category": "ai_launchpad_pricing",
+    "question": "What source should be cited if the assistant answers that SAP AI Launchpad Standard is EUR 583.00 per month?",
+    "expected_source_hint": "SAP AI Launchpad service plan"
+  },
+  {
+    "id": "Q029",
+    "category": "ai_launchpad_pricing",
+    "question": "If SAP AI Launchpad Standard is EUR 583.00 per month, what is the estimated cost for one Standard instance for one month?",
+    "expected_source_hint": "SAP AI Launchpad Standard, EUR 583.00"
+  },
+  {
+    "id": "Q030",
+    "category": "ai_launchpad_pricing",
+    "question": "Which is more expensive according to the listed prices: SAP AI Launchpad Standard at EUR 583.00 per month or SAP AI Core Standard at EUR 1.04?",
+    "expected_source_hint": "SAP AI Launchpad Standard, SAP AI Core Standard"
+  },
+
+  {
+    "id": "Q031",
+    "category": "cloud_foundry_runtime_pricing",
+    "question": "What is the listed monthly price of SAP BTP Cloud Foundry Runtime if Discovery Center shows EUR 85.00?",
+    "expected_source_hint": "Cloud Foundry Runtime, EUR 85.00 per month"
+  },
+  {
+    "id": "Q032",
+    "category": "cloud_foundry_runtime_pricing",
+    "question": "If Cloud Foundry Runtime costs EUR 85.00 per month, how much would 2 runtime units cost per month?",
+    "expected_source_hint": "Cloud Foundry Runtime, EUR 85.00 per month"
+  },
+  {
+    "id": "Q033",
+    "category": "cloud_foundry_runtime_pricing",
+    "question": "Which Discovery Center service should be used to estimate the runtime cost of operating a CAP application on SAP BTP Cloud Foundry?",
+    "expected_source_hint": "Cloud Foundry Runtime"
+  },
+  {
+    "id": "Q034",
+    "category": "cloud_foundry_runtime_pricing",
+    "question": "Is the Cloud Foundry Runtime price listed as a monthly price if the catalog shows EUR 85.00 per month?",
+    "expected_source_hint": "Cloud Foundry Runtime, unit price per month"
+  },
+  {
+    "id": "Q035",
+    "category": "cloud_foundry_runtime_pricing",
+    "question": "For a CAP backend deployed to Cloud Foundry, what EUR 85.00 monthly service should be included in the cost estimate?",
+    "expected_source_hint": "Cloud Foundry Runtime"
+  },
+  {
+    "id": "Q036",
+    "category": "cloud_foundry_runtime_pricing",
+    "question": "How much more expensive is SAP AI Launchpad Standard at EUR 583.00 per month than Cloud Foundry Runtime at EUR 85.00 per month?",
+    "expected_source_hint": "SAP AI Launchpad Standard, Cloud Foundry Runtime"
+  },
+  {
+    "id": "Q037",
+    "category": "cloud_foundry_runtime_pricing",
+    "question": "If a project uses one Cloud Foundry Runtime unit and one SAP AI Launchpad Standard plan, which listed prices should be combined?",
+    "expected_source_hint": "Cloud Foundry Runtime EUR 85.00, SAP AI Launchpad EUR 583.00"
+  },
+  {
+    "id": "Q038",
+    "category": "cloud_foundry_runtime_pricing",
+    "question": "What service catalog price should be retrieved when the user asks about the monthly cost of running applications on SAP BTP Cloud Foundry?",
+    "expected_source_hint": "Cloud Foundry Runtime, EUR 85.00"
+  },
+  {
+    "id": "Q039",
+    "category": "cloud_foundry_runtime_pricing",
+    "question": "If Cloud Foundry Runtime is EUR 85.00 per month, what would be the estimated 3-month runtime cost for one unit?",
+    "expected_source_hint": "Cloud Foundry Runtime, monthly price"
+  },
+  {
+    "id": "Q040",
+    "category": "cloud_foundry_runtime_pricing",
+    "question": "Which is cheaper for one month according to Discovery Center: Cloud Foundry Runtime at EUR 85.00 or SAP AI Launchpad Standard at EUR 583.00?",
+    "expected_source_hint": "Cloud Foundry Runtime, SAP AI Launchpad Standard"
+  },
+
+  {
+    "id": "Q041",
+    "category": "integration_suite_pricing",
+    "question": "What is the listed price of SAP Integration Suite Standard Edition if Discovery Center shows EUR 4,635.00?",
+    "expected_source_hint": "Integration Suite Standard Edition, EUR 4,635.00"
+  },
+  {
+    "id": "Q042",
+    "category": "integration_suite_pricing",
+    "question": "What is the listed price of SAP Integration Suite Edge Integration Cell if Discovery Center shows EUR 3,000.00?",
+    "expected_source_hint": "Integration Suite Edge Integration Cell, EUR 3,000.00"
+  },
+  {
+    "id": "Q043",
+    "category": "integration_suite_pricing",
+    "question": "What is the listed price of SAP Integration Suite Enhanced Edition if Discovery Center shows EUR 6,675.00?",
+    "expected_source_hint": "Integration Suite Enhanced Edition, EUR 6,675.00"
+  },
+  {
+    "id": "Q044",
+    "category": "integration_suite_pricing",
+    "question": "What is the listed price of SAP Integration Suite Premium Edition if Discovery Center shows EUR 7,595.00?",
+    "expected_source_hint": "Integration Suite Premium Edition, EUR 7,595.00"
+  },
+  {
+    "id": "Q045",
+    "category": "integration_suite_pricing",
+    "question": "Which SAP Integration Suite edition is cheaper: Standard Edition at EUR 4,635.00 or Enhanced Edition at EUR 6,675.00?",
+    "expected_source_hint": "Integration Suite Standard Edition, Enhanced Edition"
+  },
+  {
+    "id": "Q046",
+    "category": "integration_suite_pricing",
+    "question": "How much more expensive is SAP Integration Suite Premium Edition at EUR 7,595.00 than Standard Edition at EUR 4,635.00?",
+    "expected_source_hint": "Integration Suite Premium Edition, Standard Edition"
+  },
+  {
+    "id": "Q047",
+    "category": "integration_suite_pricing",
+    "question": "How much cheaper is Edge Integration Cell at EUR 3,000.00 compared with Standard Edition at EUR 4,635.00?",
+    "expected_source_hint": "Integration Suite Edge Integration Cell, Standard Edition"
+  },
+  {
+    "id": "Q048",
+    "category": "integration_suite_pricing",
+    "question": "Which is the most expensive listed SAP Integration Suite option among Edge Integration Cell EUR 3,000.00, Standard EUR 4,635.00, Enhanced EUR 6,675.00, and Premium EUR 7,595.00?",
+    "expected_source_hint": "Integration Suite service plans"
+  },
+  {
+    "id": "Q049",
+    "category": "integration_suite_pricing",
+    "question": "Which is the least expensive listed SAP Integration Suite option among Edge Integration Cell EUR 3,000.00, Standard EUR 4,635.00, Enhanced EUR 6,675.00, and Premium EUR 7,595.00?",
+    "expected_source_hint": "Integration Suite service plans"
+  },
+  {
+    "id": "Q050",
+    "category": "integration_suite_pricing",
+    "question": "If a user asks for the price difference between Enhanced Edition and Standard Edition of SAP Integration Suite, which two listed prices should be retrieved?",
+    "expected_source_hint": "Integration Suite Enhanced EUR 6,675.00, Standard EUR 4,635.00"
+  },
+
+  {
+    "id": "Q051",
+    "category": "integration_suite_pricing",
+    "question": "How much more expensive is SAP Integration Suite Enhanced Edition at EUR 6,675.00 than Edge Integration Cell at EUR 3,000.00?",
+    "expected_source_hint": "Integration Suite Enhanced Edition, Edge Integration Cell"
+  },
+  {
+    "id": "Q052",
+    "category": "integration_suite_pricing",
+    "question": "How much more expensive is SAP Integration Suite Premium Edition at EUR 7,595.00 than Enhanced Edition at EUR 6,675.00?",
+    "expected_source_hint": "Integration Suite Premium Edition, Enhanced Edition"
+  },
+  {
+    "id": "Q053",
+    "category": "integration_suite_pricing",
+    "question": "If a company budgets EUR 5,000 for SAP Integration Suite, which listed edition fits under this budget: Edge Integration Cell EUR 3,000.00, Standard EUR 4,635.00, Enhanced EUR 6,675.00, or Premium EUR 7,595.00?",
+    "expected_source_hint": "Integration Suite service plans and prices"
+  },
+  {
+    "id": "Q054",
+    "category": "integration_suite_pricing",
+    "question": "If a company wants the cheapest listed Integration Suite option, which service plan should the assistant return?",
+    "expected_source_hint": "Integration Suite Edge Integration Cell, EUR 3,000.00"
+  },
+  {
+    "id": "Q055",
+    "category": "integration_suite_pricing",
+    "question": "If a user asks whether Premium Edition is above EUR 7,000, which SAP Integration Suite price should be cited?",
+    "expected_source_hint": "Integration Suite Premium Edition, EUR 7,595.00"
+  },
+  {
+    "id": "Q056",
+    "category": "integration_suite_pricing",
+    "question": "If Standard Edition is EUR 4,635.00 and Premium Edition is EUR 7,595.00, what is the price gap the assistant should calculate?",
+    "expected_source_hint": "Integration Suite Standard and Premium"
+  },
+  {
+    "id": "Q057",
+    "category": "integration_suite_pricing",
+    "question": "Which Integration Suite plan should be cited if the user asks for the EUR 6,675.00 option?",
+    "expected_source_hint": "Integration Suite Enhanced Edition"
+  },
+  {
+    "id": "Q058",
+    "category": "integration_suite_pricing",
+    "question": "Which Integration Suite plan should be cited if the user asks for the EUR 4,635.00 option?",
+    "expected_source_hint": "Integration Suite Standard Edition"
+  },
+  {
+    "id": "Q059",
+    "category": "integration_suite_pricing",
+    "question": "Which Integration Suite plan should be cited if the user asks for the EUR 3,000.00 option?",
+    "expected_source_hint": "Integration Suite Edge Integration Cell"
+  },
+  {
+    "id": "Q060",
+    "category": "integration_suite_pricing",
+    "question": "Which Integration Suite plan should be cited if the user asks for the EUR 7,595.00 option?",
+    "expected_source_hint": "Integration Suite Premium Edition"
+  },
+
+  {
+    "id": "Q061",
+    "category": "cross_service_comparison",
+    "question": "Which is more expensive according to the listed prices: SAP Integration Suite Standard Edition at EUR 4,635.00 or SAP AI Launchpad Standard at EUR 583.00?",
+    "expected_source_hint": "Integration Suite Standard, SAP AI Launchpad Standard"
+  },
+  {
+    "id": "Q062",
+    "category": "cross_service_comparison",
+    "question": "Which is cheaper: Cloud Foundry Runtime at EUR 85.00 per month or SAP AI Launchpad Standard at EUR 583.00 per month?",
+    "expected_source_hint": "Cloud Foundry Runtime, SAP AI Launchpad Standard"
+  },
+  {
+    "id": "Q063",
+    "category": "cross_service_comparison",
+    "question": "How many times higher is SAP AI Launchpad Standard at EUR 583.00 compared with Cloud Foundry Runtime at EUR 85.00?",
+    "expected_source_hint": "SAP AI Launchpad Standard, Cloud Foundry Runtime"
+  },
+  {
+    "id": "Q064",
+    "category": "cross_service_comparison",
+    "question": "Which listed service has the lower price: SAP HANA Cloud at EUR 0.75 per Capacity Unit per month or Cloud Foundry Runtime at EUR 85.00 per month?",
+    "expected_source_hint": "SAP HANA Cloud, Cloud Foundry Runtime"
+  },
+  {
+    "id": "Q065",
+    "category": "cross_service_comparison",
+    "question": "If a project uses SAP HANA Cloud Capacity Units and SAP AI Core, which two Discovery Center service catalog entries should be checked?",
+    "expected_source_hint": "SAP HANA Cloud, SAP AI Core"
+  },
+  {
+    "id": "Q066",
+    "category": "cross_service_comparison",
+    "question": "For a simple RAG prototype on SAP BTP using HANA Cloud, AI Core, and Cloud Foundry Runtime, which listed service prices should be retrieved?",
+    "expected_source_hint": "SAP HANA Cloud EUR 0.75, SAP AI Core EUR 1.04 or Free, Cloud Foundry Runtime EUR 85.00"
+  },
+  {
+    "id": "Q067",
+    "category": "cross_service_comparison",
+    "question": "Which listed price is higher: Integration Suite Edge Integration Cell at EUR 3,000.00 or SAP AI Launchpad Standard at EUR 583.00?",
+    "expected_source_hint": "Integration Suite Edge Integration Cell, SAP AI Launchpad Standard"
+  },
+  {
+    "id": "Q068",
+    "category": "cross_service_comparison",
+    "question": "If a user asks for all services under EUR 100 among HANA Cloud EUR 0.75, AI Core EUR 1.04, Cloud Foundry Runtime EUR 85.00, and AI Launchpad EUR 583.00, which services should be returned?",
+    "expected_source_hint": "HANA Cloud, SAP AI Core, Cloud Foundry Runtime, SAP AI Launchpad"
+  },
+  {
+    "id": "Q069",
+    "category": "cross_service_comparison",
+    "question": "If a user asks which listed SAP BTP service is above EUR 500 per month, should SAP AI Launchpad Standard at EUR 583.00 be included?",
+    "expected_source_hint": "SAP AI Launchpad Standard"
+  },
+  {
+    "id": "Q070",
+    "category": "cross_service_comparison",
+    "question": "If a user asks which listed service is above EUR 4,000, should SAP Integration Suite Standard Edition at EUR 4,635.00 be included?",
+    "expected_source_hint": "Integration Suite Standard Edition"
+  },
+
+  {
+    "id": "Q071",
+    "category": "project_cost_estimation",
+    "question": "Estimate the monthly listed cost for one Cloud Foundry Runtime unit at EUR 85.00 and one SAP AI Launchpad Standard plan at EUR 583.00.",
+    "expected_source_hint": "Cloud Foundry Runtime, SAP AI Launchpad Standard"
+  },
+  {
+    "id": "Q072",
+    "category": "project_cost_estimation",
+    "question": "Estimate the monthly listed cost for 20 SAP HANA Cloud Capacity Units at EUR 0.75 each and one Cloud Foundry Runtime unit at EUR 85.00.",
+    "expected_source_hint": "SAP HANA Cloud Capacity Units, Cloud Foundry Runtime"
+  },
+  {
+    "id": "Q073",
+    "category": "project_cost_estimation",
+    "question": "Estimate the listed monthly cost for a prototype using 10 SAP HANA Cloud Capacity Units at EUR 0.75 each, SAP AI Core Standard at EUR 1.04, and Cloud Foundry Runtime at EUR 85.00.",
+    "expected_source_hint": "SAP HANA Cloud, SAP AI Core Standard, Cloud Foundry Runtime"
+  },
+  {
+    "id": "Q074",
+    "category": "project_cost_estimation",
+    "question": "Estimate the monthly listed cost if the project uses SAP AI Launchpad Standard EUR 583.00 and SAP AI Core Standard EUR 1.04.",
+    "expected_source_hint": "SAP AI Launchpad Standard, SAP AI Core Standard"
+  },
+  {
+    "id": "Q075",
+    "category": "project_cost_estimation",
+    "question": "Estimate the listed monthly cost for a deployment using Cloud Foundry Runtime EUR 85.00 and 100 SAP HANA Cloud Capacity Units at EUR 0.75 each.",
+    "expected_source_hint": "Cloud Foundry Runtime, SAP HANA Cloud Capacity Units"
+  },
+  {
+    "id": "Q076",
+    "category": "project_cost_estimation",
+    "question": "Estimate the price difference between using SAP AI Core Free Plan at EUR 0.00 and SAP AI Core Standard at EUR 1.04.",
+    "expected_source_hint": "SAP AI Core Free Plan, Standard plan"
+  },
+  {
+    "id": "Q077",
+    "category": "project_cost_estimation",
+    "question": "If a team removes SAP AI Launchpad Standard at EUR 583.00 from its monthly estimate, how much listed monthly cost is reduced?",
+    "expected_source_hint": "SAP AI Launchpad Standard"
+  },
+  {
+    "id": "Q078",
+    "category": "project_cost_estimation",
+    "question": "If a team doubles Cloud Foundry Runtime usage from one EUR 85.00 unit to two units, what cost component should increase?",
+    "expected_source_hint": "Cloud Foundry Runtime"
+  },
+  {
+    "id": "Q079",
+    "category": "project_cost_estimation",
+    "question": "If SAP HANA Cloud usage increases by 40 Capacity Units and each Capacity Unit is EUR 0.75 per month, which cost driver explains the increase?",
+    "expected_source_hint": "SAP HANA Cloud Capacity Units"
+  },
+  {
+    "id": "Q080",
+    "category": "project_cost_estimation",
+    "question": "For a minimal BTP RAG demo, which listed prices are more relevant: HANA Cloud Capacity Units, SAP AI Core plan, and Cloud Foundry Runtime, or Integration Suite Premium Edition?",
+    "expected_source_hint": "SAP HANA Cloud, SAP AI Core, Cloud Foundry Runtime, Integration Suite Premium"
+  },
+
+  {
+    "id": "Q081",
+    "category": "free_tier_and_trial",
+    "question": "Which SAP AI Core service plan is listed as free with EUR 0.00?",
+    "expected_source_hint": "SAP AI Core Free Plan"
+  },
+  {
+    "id": "Q082",
+    "category": "free_tier_and_trial",
+    "question": "If a user wants to try SAP AI Core without listed service cost, which EUR 0.00 plan should the assistant retrieve?",
+    "expected_source_hint": "SAP AI Core Free Plan"
+  },
+  {
+    "id": "Q083",
+    "category": "free_tier_and_trial",
+    "question": "What should the assistant answer if the user asks whether SAP AI Core has a free plan in Discovery Center?",
+    "expected_source_hint": "SAP AI Core Free Plan, EUR 0.00"
+  },
+  {
+    "id": "Q084",
+    "category": "free_tier_and_trial",
+    "question": "If the user asks whether all SAP BTP services in the estimate are free, how should the assistant check prices such as Cloud Foundry Runtime EUR 85.00 and AI Launchpad EUR 583.00?",
+    "expected_source_hint": "Cloud Foundry Runtime, SAP AI Launchpad Standard"
+  },
+  {
+    "id": "Q085",
+    "category": "free_tier_and_trial",
+    "question": "If a service plan is listed as EUR 0.00, what source information should the assistant cite before saying it is free?",
+    "expected_source_hint": "service plan price, Free Plan"
+  },
+  {
+    "id": "Q086",
+    "category": "free_tier_and_trial",
+    "question": "Can the assistant assume a service is free if the Discovery Center result does not show EUR 0.00?",
+    "expected_source_hint": "free plan verification, service catalog pricing"
+  },
+  {
+    "id": "Q087",
+    "category": "free_tier_and_trial",
+    "question": "If a user asks for a free setup using SAP AI Core, what plan name and price should be retrieved?",
+    "expected_source_hint": "SAP AI Core Free Plan, EUR 0.00"
+  },
+  {
+    "id": "Q088",
+    "category": "free_tier_and_trial",
+    "question": "If SAP AI Core Free Plan is EUR 0.00 but Cloud Foundry Runtime is EUR 85.00 per month, can the whole application be described as free?",
+    "expected_source_hint": "SAP AI Core Free Plan, Cloud Foundry Runtime"
+  },
+  {
+    "id": "Q089",
+    "category": "free_tier_and_trial",
+    "question": "Which data should be retrieved when the user asks whether a BTP service has Free Tier pricing?",
+    "expected_source_hint": "service plan name, Free Tier, EUR 0.00"
+  },
+  {
+    "id": "Q090",
+    "category": "free_tier_and_trial",
+    "question": "What should the assistant do if it cannot find a Free Plan price for a requested service in Discovery Center?",
+    "expected_source_hint": "fallback answer, insufficient pricing evidence"
+  },
+
+  {
+    "id": "Q091",
+    "category": "answer_grounding",
+    "question": "If the user asks for the price of SAP HANA Cloud, should the assistant cite the Capacity Unit price of EUR 0.75 per month rather than inventing a fixed database price?",
+    "expected_source_hint": "SAP HANA Cloud Capacity Unit pricing"
+  },
+  {
+    "id": "Q092",
+    "category": "answer_grounding",
+    "question": "If the user asks whether SAP HANA Cloud Vector Engine has a separate price, which HANA Cloud pricing source should the assistant check first?",
+    "expected_source_hint": "SAP HANA Cloud service plan, Capacity Units"
+  },
+  {
+    "id": "Q093",
+    "category": "answer_grounding",
+    "question": "If the user asks for Integration Suite pricing, should the assistant return a single price or distinguish Standard, Enhanced, Premium, and Edge Integration Cell prices?",
+    "expected_source_hint": "Integration Suite service plans"
+  },
+  {
+    "id": "Q094",
+    "category": "answer_grounding",
+    "question": "If the user asks for the cheapest listed Integration Suite option, which service plan and price should be cited?",
+    "expected_source_hint": "Integration Suite Edge Integration Cell, EUR 3,000.00"
+  },
+  {
+    "id": "Q095",
+    "category": "answer_grounding",
+    "question": "If the user asks for the most expensive listed Integration Suite option, which service plan and price should be cited?",
+    "expected_source_hint": "Integration Suite Premium Edition, EUR 7,595.00"
+  },
+  {
+    "id": "Q096",
+    "category": "answer_grounding",
+    "question": "If the user asks for the monthly runtime cost of a CAP application, should the assistant retrieve Cloud Foundry Runtime pricing or SAP AI Core pricing?",
+    "expected_source_hint": "Cloud Foundry Runtime"
+  },
+  {
+    "id": "Q097",
+    "category": "answer_grounding",
+    "question": "If the user asks for AI management cockpit pricing, should the assistant retrieve SAP AI Launchpad Standard at EUR 583.00 or SAP AI Core Standard at EUR 1.04?",
+    "expected_source_hint": "SAP AI Launchpad Standard"
+  },
+  {
+    "id": "Q098",
+    "category": "answer_grounding",
+    "question": "If the user asks for AI runtime pricing, should the assistant retrieve SAP AI Core service plans rather than SAP AI Launchpad pricing?",
+    "expected_source_hint": "SAP AI Core service plans"
+  },
+  {
+    "id": "Q099",
+    "category": "answer_grounding",
+    "question": "If the retrieved Discovery Center source does not contain the requested service price, what should the assistant answer instead of guessing?",
+    "expected_source_hint": "fallback answer, source citation"
+  },
+  {
+    "id": "Q100",
+    "category": "answer_grounding",
+    "question": "If the user asks for current SAP BTP prices, why should the assistant cite SAP Discovery Center service plan data instead of relying on static project documentation?",
+    "expected_source_hint": "SAP Discovery Center service catalog, pricing, current source"
+  }
+]

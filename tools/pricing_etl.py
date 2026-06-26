@@ -4,11 +4,13 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import re
 import sys
 import time
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -114,15 +116,127 @@ def canonical_json(data: Any) -> str:
     return json.dumps(data, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
 
 
+def parse_price(value: Any) -> float | None:
+    if value in (None, ""):
+        return None
+    match = re.search(r"-?\d[\d,]*(?:\.\d+)?", str(value))
+    if not match:
+        return None
+    return float(match.group(0).replace(",", ""))
+
+
+def write_jsonl(path: Path, records: list[dict[str, Any]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as file:
+        for record in records:
+            file.write(json.dumps(record, ensure_ascii=False, separators=(",", ":")) + "\n")
+
+
+def write_index_manifest(
+    output_dir: Path, records: list[dict[str, Any]], full_snapshot: bool,
+) -> None:
+    write_json(output_dir / "pricing-index-manifest.json", {
+        "source": "SAP Discovery Center",
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "full_snapshot": full_snapshot,
+        "service_names": sorted({record["service_name"] for record in records}),
+        "record_count": len(records),
+    })
+
+
 class ServiceFormatter:
-    def __init__(self, data: dict[str, Any]) -> None:
+    def __init__(self, data: dict[str, Any], service_id: str = "") -> None:
         self.data = data
+        self.service_id = service_id
         self.name = data.get("Name", "Unknown Service")
         self.description = (
             f"{data.get('LongDescription', '')}\n{data.get('ShortDescription', '')}".strip()
         )
         self.metrics = data.get("metrics", [])
         self.service_plans = self._service_plans(data.get("servicePlans", []))
+
+    def structured_records(self, synced_at: str) -> list[dict[str, Any]]:
+        """Return one filterable source record per region and price component."""
+        records: list[dict[str, Any]] = []
+        source_url = SERVICE_DETAILS_URL.format(self.service_id) if self.service_id else SERVICE_LIST_URL
+        for plan in self.service_plans:
+            plan_name = str(plan.get("Name", "Unknown Plan"))
+            for model in plan.get("commercial_models", []):
+                commercial_model = str(model.get("CommercialModels", ""))
+                regions = sorted({
+                    str(environment[2]).strip()
+                    for environment in model.get("available_environment", [])
+                    if len(environment) > 2 and str(environment[2]).strip()
+                }) or ["Global"]
+                rate_plans = model.get("ratePlans", [])
+                if not rate_plans:
+                    for region in regions:
+                        records.append(self._record(
+                            plan_name, commercial_model, region, None, None, None,
+                            source_url, synced_at,
+                            "No exact price is published for this service/plan/model/region.",
+                        ))
+                    continue
+
+                for rate_plan in rate_plans:
+                    currency = str(rate_plan.get("Currency", "")) or None
+                    for block in rate_plan.get("blockRates", []):
+                        metric = self.metric_name(str(block.get("MetricId", "")))
+                        unit = f"billing block size {block.get('BlockSize', '')}".strip()
+                        for region in regions:
+                            records.append(self._record(
+                                plan_name, commercial_model, region, metric, unit,
+                                block.get("PricePerBlock"), source_url, synced_at,
+                                "Unit price per billing block per month.", currency,
+                            ))
+
+                    for volume in rate_plan.get("allUnitVolumes", []):
+                        metric = self.metric_name(str(volume.get("MetricId", "")))
+                        for tier in volume.get("tiers", []):
+                            bound = str(tier.get("Bound", "From previous bound"))
+                            price_fields = [
+                                ("fixed fee", tier.get("FixedPrice")),
+                                ("unit price per month", tier.get("PricePerUnit")),
+                            ]
+                            for price_type, price in price_fields:
+                                if price in (None, ""):
+                                    continue
+                                for region in regions:
+                                    records.append(self._record(
+                                        plan_name, commercial_model, region, metric,
+                                        f"{price_type}; range {bound}", price,
+                                        source_url, synced_at, price_type.capitalize() + ".", currency,
+                                    ))
+        return records
+
+    def _record(
+        self, plan: str, model: str, region: str, metric: str | None,
+        unit: str | None, price: Any, source_url: str, synced_at: str,
+        note: str, currency: str | None = None,
+    ) -> dict[str, Any]:
+        price_value = parse_price(price)
+        content = (
+            f"Service: {self.name}\nService plan: {plan}\nCommercial model: {model}\n"
+            f"Region: {region}\nMetric: {metric or 'not specified'}\nUnit: {unit or 'not specified'}\n"
+            f"Price: {price_value if price_value is not None else 'not published'} "
+            f"{currency or ''}\n{note}"
+        ).strip()
+        stable = {
+            "topic": "pricing",
+            "source": "SAP Discovery Center",
+            "section": "pricing" if price_value is not None else "service-plan",
+            "service_name": self.name, "service_plan": plan,
+            "commercial_model": model, "region": region, "metric_name": metric,
+            "unit": unit, "price_value": price_value, "currency": currency,
+            "source_url": source_url, "content_text": content,
+        }
+        return {
+            **stable,
+            "last_synced_at": synced_at,
+            "content_hash": hashlib.sha256(canonical_json(stable).encode("utf-8")).hexdigest(),
+            "version": 1,
+            "access_level": "public",
+        }
 
     def _service_plans(self, service_plans: list[dict[str, Any]]) -> list[dict[str, Any]]:
         output = []
@@ -315,6 +429,8 @@ def transform(args: argparse.Namespace) -> None:
     json_dir = args.work_dir / "json_data"
     args.output_dir.mkdir(parents=True, exist_ok=True)
     generated = 0
+    records: list[dict[str, Any]] = []
+    synced_at = datetime.now(timezone.utc).isoformat()
 
     for service_id, entry in raw_data.items():
         try:
@@ -322,14 +438,20 @@ def transform(args: argparse.Namespace) -> None:
             service_name = service_data.get("Name", service_id)
             write_json(json_dir / f"{safe_filename(service_name)}.json", service_data)
 
-            formatter = ServiceFormatter(service_data)
+            formatter = ServiceFormatter(service_data, service_id)
+            records.extend(formatter.structured_records(synced_at))
             for plan_name, content in formatter.format_all_plans():
                 file_name = f"{safe_filename(service_name)}_{safe_filename(plan_name)}.txt"
                 (args.output_dir / file_name).write_text(content, encoding="utf-8")
                 generated += 1
         except Exception as error:
             print(f"Failed to transform {service_id}: {error}")
+    write_jsonl(args.output_dir / "pricing-records.jsonl", records)
+    write_index_manifest(
+        args.output_dir, records, bool(getattr(args, "full_snapshot", False)),
+    )
     print(f"Generated {generated} text files in {args.output_dir}.")
+    print(f"Generated {len(records)} structured pricing records.")
 
 
 def write_service_data_texts(service_id: str, service_data: dict[str, Any], args: argparse.Namespace) -> int:
@@ -337,7 +459,7 @@ def write_service_data_texts(service_id: str, service_data: dict[str, Any], args
     json_dir = args.work_dir / "json_data"
     write_json(json_dir / f"{safe_filename(service_name)}.json", service_data)
 
-    formatter = ServiceFormatter(service_data)
+    formatter = ServiceFormatter(service_data, service_id)
     text_files = formatter.text_files()
     for file_name, content in text_files.items():
         args.output_dir.mkdir(parents=True, exist_ok=True)
@@ -376,12 +498,12 @@ def sync(args: argparse.Namespace) -> None:
         old_xml = old_raw_data.get(service_id, {}).get("xml_text")
 
         service_data = remove_empty_values(parse_service_detail(raw_xml))
-        current_content = canonical_json(ServiceFormatter(service_data).text_files())
+        current_content = canonical_json(ServiceFormatter(service_data, service_id).text_files())
         old_content = None
         if old_xml:
             try:
                 old_data = remove_empty_values(parse_service_detail(old_xml))
-                old_content = canonical_json(ServiceFormatter(old_data).text_files())
+                old_content = canonical_json(ServiceFormatter(old_data, service_id).text_files())
             except Exception:
                 old_content = None
 
@@ -396,6 +518,7 @@ def sync(args: argparse.Namespace) -> None:
 
     write_json(service_list_path, current_services)
     write_json(raw_data_path, updated_raw_data)
+    rebuild_structured_index(updated_raw_data, current_service_ids, args)
 
     if removed_service_ids:
         print(f"Services no longer listed: {len(removed_service_ids)}")
@@ -409,9 +532,34 @@ def sync(args: argparse.Namespace) -> None:
         print("No pricing changes detected.")
 
 
+def rebuild_structured_index(
+    raw_data: dict[str, Any], service_ids: list[str], args: argparse.Namespace,
+) -> None:
+    synced_at = datetime.now(timezone.utc).isoformat()
+    records: list[dict[str, Any]] = []
+    for service_id in service_ids:
+        entry = raw_data.get(service_id)
+        if not entry:
+            continue
+        try:
+            service_data = remove_empty_values(parse_service_detail(entry["xml_text"]))
+            records.extend(ServiceFormatter(service_data, service_id).structured_records(synced_at))
+        except Exception as error:
+            print(f"Failed to index structured records for {service_id}: {error}")
+    write_jsonl(args.output_dir / "pricing-records.jsonl", records)
+    write_index_manifest(
+        args.output_dir, records, full_snapshot=bool(service_ids) and args.limit == 0,
+    )
+    print(f"Generated {len(records)} structured pricing records.")
+
+
 def run_all(args: argparse.Namespace) -> None:
     fetch_services(args)
     fetch_raw(args)
+    services = load_json(args.work_dir / "sap_service_list.json")
+    raw_data = load_json(args.work_dir / "all_raw_data.json")
+    expected_ids = {service["id"] for service in services if service.get("id")}
+    args.full_snapshot = bool(expected_ids) and args.limit == 0 and expected_ids.issubset(raw_data)
     transform(args)
 
 

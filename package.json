@@ -34,6 +34,8 @@
     "typescript": "^5"
   },
   "scripts": {
+    "test": "node --import tsx test/eval.ts --validate-only",
+    "test:eval": "node --import tsx test/eval.ts",
     "prep": "npm i && run-p prep:*",
     "prep:web-document-storage": "cd app/document-storage && npm i",
     "prep:web-user-chatbot": "cd app/user-chatbot && npm i",

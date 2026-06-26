@@ -2,6 +2,8 @@
   "src/gen/**/*.hdbview",
   "src/gen/**/*.hdbindex",
   "src/gen/**/*.hdbconstraint",
+  "src/gen/Chatbot.Documents.hdbtable",
+  "src/gen/Chatbot.JSONfiles.hdbtable",
   "src/gen/**/*_drafts.hdbtable",
   "src/gen/**/*.hdbcalculationview"
 ]

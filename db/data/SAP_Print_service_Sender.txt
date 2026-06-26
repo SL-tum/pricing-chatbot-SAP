@@ -15,7 +15,7 @@ Documents (in Blocks of 1,000)|From previous bound|0.00 EUR|20.00 EUR
 Note:
 Documents are counted for each single file with up to 250KB, for a document with more than 250KB is calculated by dividing the total size of the file by 250 and any remainder shall be counted as a single document.
 Commercial Model: Cloud Credits,btpea (Billable)
-for the following regions: CLOUD FOUNDRY, AWS, Europe (Frankfurt);CLOUD FOUNDRY, AWS, US East (VA);CLOUD FOUNDRY, Microsoft Azure, Europe (Netherlands);CLOUD FOUNDRY, Microsoft Azure, US East (VA);CLOUD FOUNDRY, Microsoft Azure, US West (WA);CLOUD FOUNDRY, Microsoft Azure, Europe (Frankfurt);CLOUD FOUNDRY, AWS, Europe (Frankfurt) EU Access;CLOUD FOUNDRY, Microsoft Azure, Switzerland (EU Access);CLOUD FOUNDRY, Microsoft Azure, China (North 3).
+for the following regions: CLOUD FOUNDRY, AWS, Europe (Frankfurt);CLOUD FOUNDRY, AWS, Europe (Frankfurt) EU Access;CLOUD FOUNDRY, AWS, US East (VA);CLOUD FOUNDRY, Microsoft Azure, China (North 3);CLOUD FOUNDRY, Microsoft Azure, Europe (Frankfurt);CLOUD FOUNDRY, Microsoft Azure, Europe (Netherlands);CLOUD FOUNDRY, Microsoft Azure, Switzerland (EU Access);CLOUD FOUNDRY, Microsoft Azure, US East (VA);CLOUD FOUNDRY, Microsoft Azure, US West (WA).
 Prices:
 Metric|Ranges|Fixed Fee|Unit Price per Month
 ------|------|---------|--------------------
@@ -26,7 +26,7 @@ Documents (in Blocks of 1,000)|From previous bound|0.00 EUR|20.00 EUR
 Note:
 Documents are counted for each single file with up to 250KB, for a document with more than 250KB is calculated by dividing the total size of the file by 250 and any remainder shall be counted as a single document.
 Commercial Model: payg (Billable)
-for the following regions: CLOUD FOUNDRY, AWS, Europe (Frankfurt);CLOUD FOUNDRY, AWS, US East (VA);CLOUD FOUNDRY, Microsoft Azure, Europe (Netherlands);CLOUD FOUNDRY, Microsoft Azure, US East (VA);CLOUD FOUNDRY, Microsoft Azure, US West (WA);CLOUD FOUNDRY, Microsoft Azure, Europe (Frankfurt);CLOUD FOUNDRY, Microsoft Azure, China (North 3).
+for the following regions: CLOUD FOUNDRY, AWS, Europe (Frankfurt);CLOUD FOUNDRY, AWS, US East (VA);CLOUD FOUNDRY, Microsoft Azure, China (North 3);CLOUD FOUNDRY, Microsoft Azure, Europe (Frankfurt);CLOUD FOUNDRY, Microsoft Azure, Europe (Netherlands);CLOUD FOUNDRY, Microsoft Azure, US East (VA);CLOUD FOUNDRY, Microsoft Azure, US West (WA).
 Prices:
 Metric|Ranges|Fixed Fee|Unit Price per Month
 ------|------|---------|--------------------

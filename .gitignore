@@ -5,6 +5,8 @@ _out
 connection.properties
 default-*.json
 tools/generated-pricing/
+db/data/pricing-records.jsonl
+db/data/pricing-index-manifest.json
 .env
 .env.*
 !.env.example
